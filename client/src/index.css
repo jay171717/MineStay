@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(15, 15%, 6%);
+  --foreground: hsl(243, 12%, 96%);
+  --card: hsl(26, 26%, 10%);
+  --card-foreground: hsl(243, 12%, 96%);
+  --popover: hsl(15, 15%, 6%);
+  --popover-foreground: hsl(243, 12%, 96%);
+  --primary: hsl(160, 80%, 46%);
+  --primary-foreground: hsl(15, 15%, 6%);
+  --secondary: hsl(215, 16%, 25%);
+  --secondary-foreground: hsl(243, 12%, 96%);
+  --muted: hsl(215, 16%, 25%);
+  --muted-foreground: hsl(218, 10%, 70%);
+  --accent: hsl(138, 76%, 58%);
+  --accent-foreground: hsl(15, 15%, 6%);
+  --destructive: hsl(0, 73%, 58%);
+  --destructive-foreground: hsl(248, 24%, 98%);
+  --border: hsl(215, 16%, 25%);
+  --input: hsl(215, 16%, 25%);
+  --ring: hsl(160, 80%, 46%);
+  --chart-1: hsl(160, 80%, 46%);
+  --chart-2: hsl(159, 100%, 36%);
+  --chart-3: hsl(42, 93%, 56%);
+  --chart-4: hsl(147, 78%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(26, 26%, 10%);
+  --sidebar-foreground: hsl(243, 12%, 96%);
+  --sidebar-primary: hsl(160, 80%, 46%);
+  --sidebar-primary-foreground: hsl(15, 15%, 6%);
+  --sidebar-accent: hsl(138, 76%, 58%);
+  --sidebar-accent-foreground: hsl(15, 15%, 6%);
+  --sidebar-border: hsl(215, 16%, 25%);
+  --sidebar-ring: hsl(160, 80%, 46%);
+  --font-sans: Open Sans, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.5rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(160, 80%, 46% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(160, 80%, 46% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(160, 80%, 46% / 0.00), 0px 1px 2px -1px hsl(160, 80%, 46% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(160, 80%, 46% / 0.00), 0px 1px 2px -1px hsl(160, 80%, 46% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(160, 80%, 46% / 0.00), 0px 2px 4px -1px hsl(160, 80%, 46% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(160, 80%, 46% / 0.00), 0px 4px 6px -1px hsl(160, 80%, 46% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(160, 80%, 46% / 0.00), 0px 8px 10px -1px hsl(160, 80%, 46% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(160, 80%, 46% / 0.00);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+.dark {
+  --background: hsl(15, 15%, 6%);
+  --foreground: hsl(243, 12%, 96%);
+  --card: hsl(26, 26%, 10%);
+  --card-foreground: hsl(243, 12%, 96%);
+  --popover: hsl(15, 15%, 6%);
+  --popover-foreground: hsl(243, 12%, 96%);
+  --primary: hsl(160, 80%, 46%);
+  --primary-foreground: hsl(15, 15%, 6%);
+  --secondary: hsl(215, 16%, 25%);
+  --secondary-foreground: hsl(243, 12%, 96%);
+  --muted: hsl(215, 16%, 25%);
+  --muted-foreground: hsl(218, 10%, 70%);
+  --accent: hsl(138, 76%, 58%);
+  --accent-foreground: hsl(15, 15%, 6%);
+  --destructive: hsl(0, 73%, 58%);
+  --destructive-foreground: hsl(248, 24%, 98%);
+  --border: hsl(215, 16%, 25%);
+  --input: hsl(215, 16%, 25%);
+  --ring: hsl(160, 80%, 46%);
+  --chart-1: hsl(160, 80%, 46%);
+  --chart-2: hsl(159, 100%, 36%);
+  --chart-3: hsl(42, 93%, 56%);
+  --chart-4: hsl(147, 78%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(26, 26%, 10%);
+  --sidebar-foreground: hsl(243, 12%, 96%);
+  --sidebar-primary: hsl(160, 80%, 46%);
+  --sidebar-primary-foreground: hsl(15, 15%, 6%);
+  --sidebar-accent: hsl(138, 76%, 58%);
+  --sidebar-accent-foreground: hsl(15, 15%, 6%);
+  --sidebar-border: hsl(215, 16%, 25%);
+  --sidebar-ring: hsl(160, 80%, 46%);
+  --font-sans: Open Sans, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.5rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(160, 80%, 46% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(160, 80%, 46% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(160, 80%, 46% / 0.00), 0px 1px 2px -1px hsl(160, 80%, 46% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(160, 80%, 46% / 0.00), 0px 1px 2px -1px hsl(160, 80%, 46% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(160, 80%, 46% / 0.00), 0px 2px 4px -1px hsl(160, 80%, 46% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(160, 80%, 46% / 0.00), 0px 4px 6px -1px hsl(160, 80%, 46% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(160, 80%, 46% / 0.00), 0px 8px 10px -1px hsl(160, 80%, 46% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(160, 80%, 46% / 0.00);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* Custom bot status animations */
+.status-online {
+  animation: pulse-green 2s infinite;
+}
+
+.status-connecting {
+  animation: pulse-yellow 1s infinite;
+}
+
+@keyframes pulse-green {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes pulse-yellow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+/* Inventory slot hover effects */
+.inventory-slot {
+  transition: all 0.2s ease;
+}
+
+.inventory-slot:hover {
+  transform: scale(1.05);
+  border-color: hsl(var(--primary));
+}
+
+/* Action button hover effects */
+.action-btn {
+  transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Bot selection animation */
+.bot-item {
+  transition: all 0.2s ease;
+}
+
+.bot-item:hover {
+  background-color: hsl(var(--secondary) / 0.5);
+}
+
+.bot-item.selected {
+  background-color: hsl(var(--primary) / 0.1);
+  border-color: hsl(var(--primary));
+  box-shadow: 0 0 0 1px hsl(var(--primary) / 0.3);
+}
