@@ -14,9 +14,10 @@ interface BotInstance {
 
 export class MinecraftBotService extends EventEmitter {
   private bots: Map<string, BotInstance> = new Map();
-  private readonly serverHost = 'fakesalmon.aternos.me';
-  private readonly serverPort = 25565;
-  private readonly version = '1.21.4';
+  private readonly serverHost = process.env.MC_HOST ?? 'fakesalmon.aternos.me';
+  private readonly serverPort = parseInt(process.env.MC_PORT ?? '25565', 10);
+  private readonly version = process.env.MC_VERSION ?? '1.21.4';
+
 
   async startBot(botData: Bot): Promise<void> {
     // If bot is already running, stop it first
